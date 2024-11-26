@@ -12,14 +12,13 @@ public class Fibonacci {
 		int numero = scanner.nextInt();
 		scanner.close();
 		
-		int primerNumero = 0;
-		int segundoNumero = 1;
+		int segundoNumero = numero + 1;
 		int contador = 0;
 		int resultado = 0;
 		do {
-			System.out.println(primerNumero);
-			resultado = primerNumero + segundoNumero;
-			primerNumero = segundoNumero;
+			System.out.println(numero);
+			resultado = numero + segundoNumero;
+			numero = segundoNumero;
 			segundoNumero = resultado;
 			
 			contador++;
